@@ -4,10 +4,12 @@ require("nvim-treesitter.configs").setup({
 		"css",
 		"javascript",
 		"typescript",
+		"tsx",
 		"php",
 		"rust",
 		"lua",
-		"markdown"
+		"markdown",
+		"markdown_inline",
 	},
 	sync_install = true,
 	indent = true,
