@@ -47,7 +47,9 @@ require("lazy").setup({
 		version = "*",
 		lazy = true,
 		cmd = "NvimTreeToggle",
-		dependencies = { "nvim-tree/nvim-web-devicons", lazy = true },
+		dependencies = {
+			"nvim-tree/nvim-web-devicons"
+		},
 		config = function()
 			require("plugins.tree")
 		end
@@ -64,8 +66,18 @@ require("lazy").setup({
 		"neovim/nvim-lspconfig",
 		lazy = true,
 		event = "BufRead",
+		dependencies = {
+      'hrsh7th/nvim-cmp',
+      'hrsh7th/cmp-nvim-lsp',
+      'hrsh7th/cmp-buffer',
+      'hrsh7th/cmp-path',
+      'L3MON4D3/LuaSnip',
+      'saadparwaiz1/cmp_luasnip',
+      'rafamadriz/friendly-snippets',
+      'onsails/lspkind.nvim',
+		},
 		config = function()
-			require("plugins.lspconfig")
+			require("plugins.lsp.config")
 		end
 	},
 	{
