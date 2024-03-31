@@ -5,13 +5,6 @@ require("lazy").setup({
 	{
 		"voldikss/vim-floaterm",
 		lazy = false,
-		--[[
-		cmd = {
-			"FloatermToggle",
-			"FloatermNew",
-			"FloatermNext",
-		},
-		--]]
 		config = function()
 			require("plugins.floaterm")
 		end
@@ -90,7 +83,6 @@ require("lazy").setup({
 	{
     "iamcco/markdown-preview.nvim",
 		lazy = true,
-    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
     ft = { "markdown" },
     build = function()
 			vim.fn["mkdp#util#install"]()
@@ -104,5 +96,13 @@ require("lazy").setup({
 		config = function()
 			require("plugins.telescope")
 		end
-  }
+  },
+	{
+		"lewis6991/gitsigns.nvim",
+		lazy = true,
+		event = "BufRead",
+		config = function()
+			require("gitsigns").setup()
+		end
+	}
 })

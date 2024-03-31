@@ -12,3 +12,4 @@ vim.o.nu = true
 vim.o.relativenumber = true
 vim.o.shiftwidth = 2
 vim.o.tabstop = 2
+vim.o.signcolumn='number'
