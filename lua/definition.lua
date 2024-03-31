@@ -12,13 +12,16 @@ utils.define_options({
 }, true)
 
 utils.define_options({
-	termguicolors = true,
-	nu = true,
-	relativenumber = true,
-	shiftwidth = 2,
-	tabstop = 2,
-	signcolumn ='yes',
-	cursorline = true,
+  termguicolors = true,
+  nu = true,
+  relativenumber = true,
+  shiftwidth = 2,
+  tabstop = 2,
+  signcolumn ='auto',
+  cursorline = true,
+  encoding = 'utf-8',
+  fileformats = 'unix',
+  mouse = '',
 })
 
 utils.define_sign({name = 'DiagnosticSignError', text = ''})
