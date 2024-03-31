@@ -1,21 +1,3 @@
--- Setup language servers.
---local lspconfig = require('lspconfig')
---lspconfig.tsserver.setup {}
-
---[[
-local servers = {
-  'rust_analyzer',
-  'tsserver',
-  'volar',
-  'prismals',
-  'intelephense',
-  'html',
-  'cssls',
-  'tailwindcss',
-  'jsonls',
-}
---]]
-
 local servers = require('plugins.lsp.servers')
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
