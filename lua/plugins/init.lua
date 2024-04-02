@@ -122,7 +122,7 @@ require("lazy").setup({
 		lazy = true,
 		event = "BufRead",
 		config = function()
-			require("gitsigns").setup()
+			require("plugins.gitsigns")
 		end
 	}
 })
