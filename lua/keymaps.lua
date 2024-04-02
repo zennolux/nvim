@@ -1,6 +1,5 @@
 local map = vim.keymap.set
 local options = { silent = true }
-local telescope = require('telescope.builtin')
 
 --nvim-tree
 map("n", "<C-b>", ":NvimTreeToggle<CR>", options)
@@ -18,5 +17,5 @@ map("n", "<Leader>t", ":Lspsaga outline<CR>", options)
 map("n", "md", ":MarkdownPreview<CR>", options)
 
 --telescope
-map("n", "<Leader>f", telescope.find_files, options)
-map("n", "<Leader>s", telescope.live_grep, options)
+map("n", "<Leader>f", ":lua require('telescope.builtin').find_files({search_dirs = {require('utils').get_project_root()}})<CR>", options)
+map("n", "<Leader>s", ":lua require('telescope.builtin').live_grep({search_dirs = {require('utils').get_project_root()}})<CR>", options)
