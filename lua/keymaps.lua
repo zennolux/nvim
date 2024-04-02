@@ -16,6 +16,9 @@ map("n", "<Leader>t", ":Lspsaga outline<CR>", options)
 --markdown
 map("n", "md", ":MarkdownPreview<CR>", options)
 
+--translator
+map("n", "<C-y>", ":TranslateW<CR>", options)
+
 --telescope
 map("n", "<Leader>f", ":lua require('telescope.builtin').find_files({search_dirs = {require('utils').get_project_root()}})<CR>", options)
 map("n", "<Leader>s", ":lua require('telescope.builtin').live_grep({search_dirs = {require('utils').get_project_root()}})<CR>", options)

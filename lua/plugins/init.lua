@@ -4,9 +4,18 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
 	{
 		"voldikss/vim-floaterm",
-		lazy = false,
+		lazy = true,
+		event = "VimEnter",
 		config = function()
 			require("plugins.floaterm")
+		end
+	},
+	{
+		"voldikss/vim-translator",
+		lazy = true,
+		event = "BufRead",
+		config = function()
+			require("plugins.translator")
 		end
 	},
 	{
