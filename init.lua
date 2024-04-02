@@ -1,3 +1,3 @@
 require("definition")
-require("plugins")
 require("keymaps")
+require("plugins")
