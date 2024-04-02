@@ -81,7 +81,15 @@ require("lazy").setup({
 		end
 	},
 	{
-    'nvimdev/lspsaga.nvim',
+		"nvimdev/guard.nvim",
+		lazy = true,
+		event = "BufRead",
+		config = function()
+			require("plugins.guard")
+		end
+	},
+	{
+    "nvimdev/lspsaga.nvim",
 		lazy = true,
 		event = "LspAttach",
     config = function()
