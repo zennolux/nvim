@@ -22,3 +22,6 @@ map("n", "<C-y>", ":TranslateW<CR>", options)
 --telescope
 map("n", "<Leader>f", ":lua require('telescope.builtin').find_files({search_dirs = {require('utils').get_project_root()}})<CR>", options)
 map("n", "<Leader>s", ":lua require('telescope.builtin').live_grep({search_dirs = {require('utils').get_project_root()}})<CR>", options)
+
+--nvimtree
+map("n", "<C-o>", ":lua require('nvim-tree.api').tree.change_root_to_node()<CR>", options)
