@@ -7,18 +7,27 @@
 ```
 -- The powerful code editor i used daily.
 
-### Usage
+# Install
 
-> 1. install plugin manager
+#### 1. install plugin manager
 
 ```bash
 git clone https://github.com/folke/lazy.nvim.git --branch=stable ~/.local/share/nvim/lazy/lazy.nvim
-
 ```
 
-> 2. pull this repository
+#### 2. pull this repository
 
 ```bash
 git clone https://github.com/zennolux/nvim.git --branch=main ~/.config/nvim
+```
 
+#### 3. install plugins 
+
+> open nvim first
+```bash
+nvim
+```
+> then execute vim command
+```vim
+:Lazy
 ```
