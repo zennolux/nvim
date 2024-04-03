@@ -22,3 +22,4 @@ map("n", "<Leader>s", ":lua require('telescope.builtin').live_grep({search_dirs 
 --nvimtree
 map("n", "<C-b>", ":NvimTreeToggle<CR>", options)
 map("n", "<C-o>", ":lua require('nvim-tree.api').tree.change_root_to_node()<CR>", options)
+map("n", "zh", ":lua require('nvim-tree.api').tree.toggle_hidden_filter()<CR>", options)
