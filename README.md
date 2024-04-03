@@ -5,7 +5,7 @@
                                 |_| |_|\___|\___/ \_/ |_|_| |_| |_|
                                                                    
 ```
--- The powerful code editor i used daily.
+[neovim](https://github.com/neovim/neovim) -- The powerful code editor i used daily.
 
 # Install
 
