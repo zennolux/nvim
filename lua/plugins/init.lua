@@ -13,7 +13,7 @@ require("lazy").setup({
 	{
 		"voldikss/vim-translator",
 		lazy = true,
-		event = "BufRead",
+		cmd = "TranslateW",
 		config = function()
 			require("plugins.translator")
 		end
@@ -119,7 +119,7 @@ require("lazy").setup({
   },
 	{
     'nvim-telescope/telescope.nvim',
-		lazy = false,
+		lazy = true,
 		tag = '0.1.6',
     dependencies = { 'nvim-lua/plenary.nvim' },
 		config = function()
