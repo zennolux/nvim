@@ -102,7 +102,7 @@ require("lazy").setup({
 		lazy = true,
 		event = "LspAttach",
     config = function()
-			require("plugins.lspsaga")
+			require("plugins.lsp.saga")
     end,
     dependencies = {
       'nvim-treesitter/nvim-treesitter',
