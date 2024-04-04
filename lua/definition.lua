@@ -17,7 +17,7 @@ utils.define_options({
   relativenumber = true,
   shiftwidth = 2,
   tabstop = 2,
-  signcolumn ='auto',
+  signcolumn ='auto:1',
   cursorline = true,
   encoding = 'utf-8',
   fileformats = 'unix',

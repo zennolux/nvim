@@ -34,6 +34,7 @@ require("lazy").setup({
 			require("nvim-ts-autotag").setup()
 		end
 	},
+	--[[
   {
     "folke/tokyonight.nvim",
     lazy = false,
@@ -42,6 +43,15 @@ require("lazy").setup({
       require("plugins.tokyonight")
     end
   },
+	--]]
+	{
+		'marko-cerovac/material.nvim',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("plugins.material")
+    end
+	},
 	{
 		"nvim-lualine/lualine.nvim",
 		lazy = true,
