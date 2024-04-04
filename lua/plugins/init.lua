@@ -40,7 +40,7 @@ require("lazy").setup({
     lazy = false,
     priority = 1000,
     config = function()
-      require("plugins.tokyonight")
+      require("plugins.colorscheme.tokyonight")
     end
   },
 	{
@@ -48,7 +48,7 @@ require("lazy").setup({
     lazy = false,
     priority = 1000,
     config = function()
-      require("plugins.material")
+      require("plugins.colorscheme.material")
     end
 	},
 	--]]
@@ -57,7 +57,7 @@ require("lazy").setup({
     lazy = false,
     priority = 1000,
     config = function()
-      require("plugins.nightfox")
+      require("plugins.colorscheme.nightfox")
     end
 	},
 	{
