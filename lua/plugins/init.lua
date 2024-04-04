@@ -43,13 +43,21 @@ require("lazy").setup({
       require("plugins.tokyonight")
     end
   },
-	--]]
 	{
 		'marko-cerovac/material.nvim',
     lazy = false,
     priority = 1000,
     config = function()
       require("plugins.material")
+    end
+	},
+	--]]
+	{
+		"EdenEast/nightfox.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("plugins.nightfox")
     end
 	},
 	{
