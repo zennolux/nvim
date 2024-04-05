@@ -9,7 +9,7 @@ require("nightfox").setup({
 	},
 	palettes = {
 		nightfox = {
-			red = "#4e75aa",
+			--red = "#4e75aa",
 		},
 	},
 })
