@@ -34,30 +34,12 @@ require("lazy").setup({
 			require("nvim-ts-autotag").setup()
 		end
 	},
-	--[[
-  {
-    "folke/tokyonight.nvim",
-    lazy = false,
-    priority = 1000,
-    config = function()
-      require("plugins.colorscheme.tokyonight")
-    end
-  },
-	{
-		'marko-cerovac/material.nvim',
-    lazy = false,
-    priority = 1000,
-    config = function()
-      require("plugins.colorscheme.material")
-    end
-	},
-	--]]
 	{
 		"EdenEast/nightfox.nvim",
     lazy = false,
     priority = 1000,
     config = function()
-      require("plugins.colorscheme.nightfox")
+      require("plugins.nightfox")
     end
 	},
 	{
