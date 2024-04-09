@@ -1,7 +1,7 @@
 require("nightfox").setup({
 	options = {
 		terminal_colors = true,
-		module_default = false,
+		module_default = true,
 		styles = {
 			keywords = "bold",
 			functions = "bold",
