@@ -1,6 +1,7 @@
-vim.opt_local.shiftwidth = 4
-vim.opt_local.softtabstop = 4
-vim.opt_local.smartindent = true
-vim.opt_local.tabstop = 4
-vim.opt_local.cindent = false
-vim.opt_local.expandtab = true
+vim.opt.expandtab = true
+vim.opt.autoindent = true
+vim.opt.smartindent = true
+vim.opt.smarttab = true
+vim.opt.shiftwidth = 4
+vim.opt.softtabstop = 4
+vim.opt.tabstop = 4
