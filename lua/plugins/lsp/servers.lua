@@ -27,7 +27,6 @@ return {
 	},
 	{
     'intelephense',
-		enable = false,
 		options = {
 			filetypes = { 'php' }
 		}
