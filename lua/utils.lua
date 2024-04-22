@@ -29,4 +29,10 @@ function M.get_project_root()
   return path
 end
 
+function M.toggle_tree_filter()
+	local tree = require("nvim-tree.api").tree
+	tree.toggle_hidden_filter()
+	tree.toggle_gitignore_filter()
+end
+
 return M
