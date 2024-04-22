@@ -21,6 +21,8 @@ git clone https://github.com/folke/lazy.nvim.git --branch=stable ~/.local/share/
 git clone https://github.com/zennolux/nvim.git --branch=main ~/.config/nvim
 ```
 
+> --- Tips: currently, there is a new way to do both of above, for the detail, please visit [zennolux/nvimconf](https://github.com/zennolux/nvimconf)
+
 #### 3. install plugins 
 
 > open nvim first
