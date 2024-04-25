@@ -1,7 +1,7 @@
 require("nightfox").setup({
 	options = {
 		terminal_colors = true,
-		module_default = true,
+		module_default = false,
 		styles = {
 			keywords = "bold",
 			functions = "bold",
@@ -14,4 +14,4 @@ require("nightfox").setup({
 		},
 	},
 })
-vim.cmd("colorscheme nightfox")
+vim.cmd("colorscheme terafox")
