@@ -11,22 +11,22 @@ function M.define_options(opts, global)
 end
 
 function M.define_sign(opts)
-  vim.fn.sign_define(opts.name, {
-    texthl = opts.name,
-    text = opts.text,
-    numhl = ''
-  })
+	vim.fn.sign_define(opts.name, {
+		texthl = opts.name,
+		text = opts.text,
+		numhl = "",
+	})
 end
 
 function M.get_project_root()
-  local path = vim.fn.expand('%:p:h')
-  while path ~= '/' do
-    if vim.fn.glob(path .. '/.git') ~= '' or vim.fn.glob(path .. '/package.json') ~= '' then
-      return path
-    end
-    path = vim.fn.fnamemodify(path, ':h')
-  end
-  return path
+	local path = vim.fn.expand("%:p:h")
+	while path ~= "/" do
+		if vim.fn.glob(path .. "/.git") ~= "" or vim.fn.glob(path .. "/package.json") ~= "" then
+			return path
+		end
+		path = vim.fn.fnamemodify(path, ":h")
+	end
+	return path
 end
 
 function M.toggle_tree_filter()
