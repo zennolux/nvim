@@ -8,7 +8,7 @@ require("lazy").setup({
 		event = "VimEnter",
 		config = function()
 			require("plugins.floaterm")
-		end
+		end,
 	},
 	{
 		"voldikss/vim-translator",
@@ -16,7 +16,7 @@ require("lazy").setup({
 		cmd = "TranslateW",
 		config = function()
 			require("plugins.translator")
-		end
+		end,
 	},
 	{
 		"windwp/nvim-autopairs",
@@ -24,7 +24,7 @@ require("lazy").setup({
 		event = "InsertEnter",
 		config = function()
 			require("nvim-autopairs").setup()
-		end
+		end,
 	},
 	{
 		"windwp/nvim-ts-autotag",
@@ -32,15 +32,15 @@ require("lazy").setup({
 		event = "insertEnter",
 		config = function()
 			require("nvim-ts-autotag").setup()
-		end
+		end,
 	},
 	{
 		"EdenEast/nightfox.nvim",
-    lazy = false,
-    priority = 1000,
-    config = function()
-      require("plugins.nightfox")
-    end
+		lazy = false,
+		priority = 1000,
+		config = function()
+			require("plugins.nightfox")
+		end,
 	},
 	{
 		"nvim-lualine/lualine.nvim",
@@ -49,7 +49,7 @@ require("lazy").setup({
 		dependencies = { "nvim-tree/nvim-web-devicons", lazy = true },
 		config = function()
 			require("plugins.lualine")
-		end
+		end,
 	},
 	{
 		"nvim-tree/nvim-tree.lua",
@@ -57,11 +57,11 @@ require("lazy").setup({
 		lazy = true,
 		cmd = "NvimTreeToggle",
 		dependencies = {
-			"nvim-tree/nvim-web-devicons"
+			"nvim-tree/nvim-web-devicons",
 		},
 		config = function()
 			require("plugins.tree")
-		end
+		end,
 	},
 	{
 		"nvim-treesitter/nvim-treesitter",
@@ -76,18 +76,18 @@ require("lazy").setup({
 		lazy = true,
 		event = "BufRead",
 		dependencies = {
-      'hrsh7th/nvim-cmp',
-      'hrsh7th/cmp-nvim-lsp',
-      'hrsh7th/cmp-buffer',
-      'hrsh7th/cmp-path',
-      'L3MON4D3/LuaSnip',
-      'saadparwaiz1/cmp_luasnip',
-      'rafamadriz/friendly-snippets',
-      'onsails/lspkind.nvim',
+			"hrsh7th/nvim-cmp",
+			"hrsh7th/cmp-nvim-lsp",
+			"hrsh7th/cmp-buffer",
+			"hrsh7th/cmp-path",
+			"L3MON4D3/LuaSnip",
+			"saadparwaiz1/cmp_luasnip",
+			"rafamadriz/friendly-snippets",
+			"onsails/lspkind.nvim",
 		},
 		config = function()
 			require("plugins.lsp.config")
-		end
+		end,
 	},
 	{
 		"nvimdev/guard.nvim",
@@ -95,43 +95,50 @@ require("lazy").setup({
 		event = "BufRead",
 		config = function()
 			require("plugins.guard")
-		end
+		end,
 	},
 	{
-    "nvimdev/lspsaga.nvim",
+		"nvimdev/lspsaga.nvim",
 		lazy = true,
 		event = "LspAttach",
-    config = function()
+		config = function()
 			require("plugins.lsp.saga")
-    end,
-    dependencies = {
-      'nvim-treesitter/nvim-treesitter',
-      'nvim-tree/nvim-web-devicons',   
-    }
+		end,
+		dependencies = {
+			"nvim-treesitter/nvim-treesitter",
+			"nvim-tree/nvim-web-devicons",
+		},
 	},
 	{
-    "iamcco/markdown-preview.nvim",
+		"nvimdev/indentmini.nvim",
+		event = "BufEnter",
+		config = function()
+			require("plugins.indentmini")
+		end,
+	},
+	{
+		"iamcco/markdown-preview.nvim",
 		lazy = true,
-    ft = { "markdown" },
-    build = function()
+		ft = { "markdown" },
+		build = function()
 			vim.fn["mkdp#util#install"]()
 		end,
-  },
+	},
 	{
-    'nvim-telescope/telescope.nvim',
+		"nvim-telescope/telescope.nvim",
 		lazy = true,
-		tag = '0.1.6',
-    dependencies = { 'nvim-lua/plenary.nvim' },
+		tag = "0.1.6",
+		dependencies = { "nvim-lua/plenary.nvim" },
 		config = function()
 			require("plugins.telescope")
-		end
-  },
+		end,
+	},
 	{
 		"lewis6991/gitsigns.nvim",
 		lazy = true,
 		event = "BufRead",
 		config = function()
 			require("plugins.gitsigns")
-		end
-	}
+		end,
+	},
 })
