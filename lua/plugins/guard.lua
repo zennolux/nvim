@@ -13,6 +13,12 @@ ft('rust'):fmt({
   stdin = true,
 })
 
+ft('lua'):fmt({
+ cmd = 'stylua',
+  args = { '-' },
+  stdin = true,
+})
+
 require('guard').setup({
 	fmt_on_save = true,
 	lsp_as_default_formatter = true,
