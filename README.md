@@ -7,29 +7,14 @@
 ```
 [neovim](https://github.com/neovim/neovim) -- The powerful code editor i used daily.
 
-# Install
-
-#### 1. install plugin manager
+> ### Just one command to install
 
 ```bash
-git clone https://github.com/folke/lazy.nvim.git --branch=stable ~/.local/share/nvim/lazy/lazy.nvim
+curl -O -L https://github.com/zennolux/nvimconf/raw/main/nvimconf && chmod +x ./nvimconf && ./nvimconf
 ```
 
-#### 2. pull this repository
+---
 
-```bash
-git clone https://github.com/zennolux/nvim.git --branch=main ~/.config/nvim
-```
 
-> --- Tips: currently, there is a new way to do both of above, for the detail, please visit [zennolux/nvimconf](https://github.com/zennolux/nvimconf)
-
-#### 3. install plugins 
-
-> open nvim first
-```bash
-nvim
-```
-> then execute vim command
-```vim
-:Lazy
-```
+> ### Then it would be like this
+![](https://github.com/zennolux/nvim/assets/147602513/40b11efe-e2c7-478c-a367-bc7e9b223feb)
