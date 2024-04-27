@@ -1,59 +1,66 @@
 return {
-  {
-		'rust_analyzer',
+	{
+		"rust_analyzer",
 		options = {
-			filetypes = { 'rust' }
-		}
-	},
-  {
-		'tsserver',
-		options = {
-			filetypes = { 'javascript', 'typescript', 'typescriptreact' }
-		}
-	},
-  {
-		'volar',
-		enable = false,
-		options = {
-			filetypes = { 'vue' }
-		}
+			filetypes = { "rust" },
+		},
 	},
 	{
-    'prismals',
-		enable = false,
+		"tsserver",
 		options = {
-			filetypes = { 'prisma' }
-		}
+			filetypes = { "javascript", "typescript", "typescriptreact" },
+		},
 	},
 	{
-    'intelephense',
-		options = {
-			filetypes = { 'php' }
-		}
-	},
-	{
-    'tailwindcss',
+		"volar",
 		enable = false,
 		options = {
-			filetypes = { 'typescriptreact' }
-		}
-  },
-  {
-		'html',
-		options = {
-			filetypes = { 'html' }
-		}
+			filetypes = { "vue" },
+		},
 	},
-  {
-		'cssls',
+	{
+		"prismals",
+		enable = false,
 		options = {
-			filetypes = { 'css' }
-		}
+			filetypes = { "prisma" },
+		},
 	},
-  {
-		'jsonls',
+	{
+		"intelephense",
 		options = {
-			filetypes = { 'json' }
-		}
+			filetypes = { "php" },
+		},
+	},
+	{
+		"tailwindcss",
+		enable = true,
+		options = {
+			filetypes = { "typescriptreact" },
+		},
+	},
+	{
+		"html",
+		options = {
+			filetypes = { "html" },
+		},
+	},
+	{
+		"cssls",
+		options = {
+			filetypes = { "css" },
+			settings = {
+			  css = {
+				  lint = {
+					  unknownAtRules = 'ignore',
+					},
+    		},
+			}
+		},
+	},
+	{
+		"jsonls",
+		options = {
+			filetypes = { "json" },
+		},
 	},
 }
