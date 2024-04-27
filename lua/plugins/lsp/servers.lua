@@ -35,7 +35,7 @@ return {
 		"tailwindcss",
 		enable = true,
 		options = {
-			filetypes = { "typescriptreact" },
+			filetypes = { "css", "typescriptreact" },
 		},
 	},
 	{
@@ -49,12 +49,12 @@ return {
 		options = {
 			filetypes = { "css" },
 			settings = {
-			  css = {
-				  lint = {
-					  unknownAtRules = 'ignore',
+				css = {
+					lint = {
+						unknownAtRules = "ignore",
 					},
-    		},
-			}
+				},
+			},
 		},
 	},
 	{
