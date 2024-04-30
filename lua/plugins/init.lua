@@ -141,4 +141,10 @@ require("lazy").setup({
 			require("plugins.gitsigns")
 		end,
 	},
+	{
+		"MaxMEllon/vim-jsx-pretty",
+		enable = false,
+		lazy = true,
+		ft = { "javascript", "javascriptreact", "typescript", "typescriptreact" },
+	},
 })
