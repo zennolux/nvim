@@ -8,6 +8,7 @@ map("n", "ge", ":Lspsaga diagnostic_jump_next<CR>", options)
 map("n", "K", ":Lspsaga hover_doc<CR>", options)
 map("n", "rn", ":Lspsaga rename<CR>", options)
 map("n", "<Leader>t", ":Lspsaga outline<CR>", options)
+map("n", "r", ":LspRestart<CR>", options)
 
 --markdown
 map("n", "md", ":MarkdownPreview<CR>", options)
@@ -16,8 +17,18 @@ map("n", "md", ":MarkdownPreview<CR>", options)
 map("n", "<C-y>", ":TranslateW<CR>", options)
 
 --telescope
-map("n", "<Leader>f", ":lua require('telescope.builtin').find_files({search_dirs = {require('utils').get_project_root()}})<CR>", options)
-map("n", "<Leader>s", ":lua require('telescope.builtin').live_grep({search_dirs = {require('utils').get_project_root()}})<CR>", options)
+map(
+	"n",
+	"<Leader>f",
+	":lua require('telescope.builtin').find_files({search_dirs = {require('utils').get_project_root()}})<CR>",
+	options
+)
+map(
+	"n",
+	"<Leader>s",
+	":lua require('telescope.builtin').live_grep({search_dirs = {require('utils').get_project_root()}})<CR>",
+	options
+)
 
 --nvimtree
 map("n", "<C-b>", ":NvimTreeToggle<CR>", options)
