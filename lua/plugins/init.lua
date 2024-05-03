@@ -110,13 +110,6 @@ require("lazy").setup({
 		},
 	},
 	{
-		"nvimdev/indentmini.nvim",
-		event = "BufEnter",
-		config = function()
-			require("plugins.indentmini")
-		end,
-	},
-	{
 		"iamcco/markdown-preview.nvim",
 		lazy = true,
 		ft = { "markdown" },
