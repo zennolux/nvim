@@ -35,11 +35,12 @@ require("lazy").setup({
 		end,
 	},
 	{
-		"EdenEast/nightfox.nvim",
+		"catppuccin/nvim",
 		lazy = false,
+		name = "catppuccin",
 		priority = 1000,
 		config = function()
-			require("plugins.nightfox")
+			require("plugins.catppuccin")
 		end,
 	},
 	{
@@ -135,9 +136,11 @@ require("lazy").setup({
 		end,
 	},
 	{
-		"MaxMEllon/vim-jsx-pretty",
-		enable = false,
+		"echasnovski/mini.indentscope",
 		lazy = true,
-		ft = { "javascript", "javascriptreact", "typescript", "typescriptreact" },
+		event = "BufRead",
+		config = function()
+			require("mini.indentscope").setup()
+		end,
 	},
 })
