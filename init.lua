@@ -1,3 +1,3 @@
-require("definition")
+require("base")
 require("keymaps")
 require("plugins")
