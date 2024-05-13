@@ -145,7 +145,7 @@ require("lazy").setup({
 	{
 		"NvChad/nvim-colorizer.lua",
 		lazy = true,
-		ft = { "typescriptreact", "css", "yaml" },
+		event = "BufRead",
 		config = function()
 			require("colorizer").setup()
 		end,
