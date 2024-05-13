@@ -143,4 +143,8 @@ require("lazy").setup({
 			require("mini.indentscope").setup()
 		end,
 	},
+	{
+		"maxmellon/vim-jsx-pretty",
+		ft = { "typescriptreact", "typescript", "javascript" },
+	},
 })
