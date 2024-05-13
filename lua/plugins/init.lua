@@ -35,12 +35,11 @@ require("lazy").setup({
 		end,
 	},
 	{
-		"catppuccin/nvim",
+		"sainnhe/everforest",
 		lazy = false,
-		name = "catppuccin",
 		priority = 1000,
 		config = function()
-			require("plugins.catppuccin")
+			require("plugins.colorscheme.everforest")
 		end,
 	},
 	{
@@ -144,7 +143,11 @@ require("lazy").setup({
 		end,
 	},
 	{
-		"maxmellon/vim-jsx-pretty",
-		ft = { "typescriptreact", "typescript", "javascript" },
+		"NvChad/nvim-colorizer.lua",
+		lazy = true,
+		ft = { "typescriptreact", "css", "yaml" },
+		config = function()
+			require("colorizer").setup()
+		end,
 	},
 })
