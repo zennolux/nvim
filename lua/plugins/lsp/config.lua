@@ -26,11 +26,11 @@ local cmp_autopairs = require("nvim-autopairs.completion.cmp")
 cmp.setup({
 	window = {
 		completion = cmp.config.window.bordered({
-			border = "single",
+			border = "rounded",
 			winhighlight = "Normal:None,FloatBorder:None,CursorLine:Pmenu,Search:CurSearch",
 		}),
 		documentation = cmp.config.window.bordered({
-			border = "single",
+			border = "rounded",
 			winhighlight = "Normal:None,FloatBorder:None,CursorLine:Pmenu,Search:CurSearch",
 		}),
 	},
