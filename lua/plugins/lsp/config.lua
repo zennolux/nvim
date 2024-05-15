@@ -27,11 +27,11 @@ cmp.setup({
 	window = {
 		completion = cmp.config.window.bordered({
 			border = "single",
-			winheight = "Normal:None,FloatBorder:None,CursorLine:None,Search:None",
+			winhighlight = "Normal:None,FloatBorder:None,CursorLine:Pmenu,Search:CurSearch",
 		}),
 		documentation = cmp.config.window.bordered({
 			border = "single",
-			winheight = "Normal:None,FloatBorder:None,CursorLine:None,Search:None",
+			winhighlight = "Normal:None,FloatBorder:None,CursorLine:Pmenu,Search:CurSearch",
 		}),
 	},
 	snippet = {
