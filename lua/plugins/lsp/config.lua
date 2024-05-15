@@ -24,6 +24,16 @@ local cmp = require("cmp")
 local cmp_autopairs = require("nvim-autopairs.completion.cmp")
 
 cmp.setup({
+	window = {
+		completion = cmp.config.window.bordered({
+			border = "single",
+			winheight = "Normal:None,FloatBorder:None,CursorLine:None,Search:None",
+		}),
+		documentation = cmp.config.window.bordered({
+			border = "single",
+			winheight = "Normal:None,FloatBorder:None,CursorLine:None,Search:None",
+		}),
+	},
 	snippet = {
 		expand = function(args)
 			luasnip.lsp_expand(args.body)
