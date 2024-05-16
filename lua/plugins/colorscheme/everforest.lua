@@ -15,6 +15,9 @@ vim.cmd([[
   autocmd ColorScheme * highlight FloatBorder guibg=NONE ctermbg=NONE
   autocmd ColorScheme * highlight FloatShadow guibg=NONE ctermbg=NONE
 	autocmd ColorScheme * highlight SpellBad cterm=NONE gui=NONE guisp=NONE
+	autocmd ColorScheme * highlight SpellCap cterm=NONE gui=NONE guisp=NONE
+	autocmd ColorScheme * highlight SpellLocal cterm=NONE gui=NONE guisp=NONE
+	autocmd ColorScheme * highlight SpellRare cterm=NONE gui=NONE guisp=NONE
 ]])
 
 vim.cmd.colorscheme("everforest")
