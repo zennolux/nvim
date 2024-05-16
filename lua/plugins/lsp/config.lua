@@ -72,6 +72,17 @@ cmp.setup({
 	}, {
 		{ name = "buffer" },
 		{ name = "path" },
+	}, {
+		{
+			name = "spell",
+			option = {
+				keep_all_entries = false,
+				enable_in_context = function()
+					return true
+				end,
+				preselect_correct_word = true,
+			},
+		},
 	}),
 	formatting = {
 		format = lspkind.cmp_format({
@@ -79,10 +90,11 @@ cmp.setup({
 			maxwidth = 100,
 			before = function(entry, vim_item)
 				vim_item.menu = ({
-					buffer = "[Buffer]",
-					nvim_lsp = "[LSP]",
-					luasnip = "[LuaSnip]",
-					path = "[Path]",
+					buffer = "󰃨 [Buffer]",
+					nvim_lsp = "󰿘 [LSP]",
+					luasnip = "󰅩 [LuaSnip]",
+					path = " [Path]",
+					spell = "󰓆 [Spell]",
 				})[entry.source.name]
 				return vim_item
 			end,

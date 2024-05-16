@@ -8,10 +8,13 @@ vim.g.everforest_diagnostic_text_highlight = 0
 vim.g.everforest_diagnostic_line_highlight = 0
 vim.g.everforest_diagnostic_virtual_text = "colored"
 vim.g.everforest_float_style = "dim"
+
 vim.cmd([[
   autocmd ColorScheme * highlight NormalFloat guibg=NONE ctermbg=NONE
   autocmd ColorScheme * highlight Float guibg=NONE ctermbg=NONE
   autocmd ColorScheme * highlight FloatBorder guibg=NONE ctermbg=NONE
   autocmd ColorScheme * highlight FloatShadow guibg=NONE ctermbg=NONE
+	autocmd ColorScheme * highlight SpellBad cterm=NONE gui=NONE guisp=NONE
 ]])
+
 vim.cmd.colorscheme("everforest")

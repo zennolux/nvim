@@ -26,6 +26,8 @@ utils.define_options({
 	fileformats = "unix",
 	mouse = "",
 	cmdheight = 0,
+	spell = true,
+	spelllang = "en_us",
 })
 
 utils.define_sign({ name = "DiagnosticSignError", text = "" })
