@@ -2,6 +2,8 @@ local servers = require("plugins.lsp.servers")
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
 
+vim.lsp.inlay_hint.enable(true)
+
 for _, item in pairs(servers) do
 	if item.enable ~= false then
 		local lsp = item[1]
@@ -13,6 +15,7 @@ for _, item in pairs(servers) do
 			},
 			filetypes = item.options.filetypes,
 			settings = item.options.settings or {},
+			init_options = item.options.init_options or {},
 			single_file_support = true,
 		})
 	end
