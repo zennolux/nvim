@@ -99,6 +99,22 @@ cmp.setup({
 					path = " [Path]",
 					spell = "󰓆 [Spell]",
 				})[entry.source.name]
+
+				-- for tailwind-tools
+				local doc = entry.completion_item.documentation
+				local utils = require("tailwind-tools.utils")
+
+				if vim_item.kind == "Color" and doc then
+					local content = type(doc) == "string" and doc or doc.value
+					local base, _, _, _r, _g, _b = 10, content:find("rgba?%((%d+), (%d+), (%d+)")
+
+					if not _r then
+						base, _, _, _r, _g, _b = 16, content:find("#(%x%x)(%x%x)(%x%x)")
+					else
+						local r, g, b = tonumber(_r, base), tonumber(_g, base), tonumber(_b, base)
+						vim_item.kind_hl_group = utils.set_hl_from(r, g, b, "foreground")
+					end
+				end
 				return vim_item
 			end,
 		}),

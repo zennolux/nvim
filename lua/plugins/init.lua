@@ -151,4 +151,12 @@ require("lazy").setup({
 			require("colorizer").setup()
 		end,
 	},
+	{
+		"luckasRanarison/tailwind-tools.nvim",
+		lazy = true,
+		ft = { "typescriptreact", "css" },
+		config = function()
+			require("plugins.tailwind")
+		end,
+	},
 })
