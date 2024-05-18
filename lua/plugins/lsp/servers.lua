@@ -77,7 +77,7 @@ return {
 	{
 		"jsonls",
 		options = {
-			filetypes = { "jsonc" },
+			filetypes = { "jsonc", "json" },
 		},
 	},
 }
