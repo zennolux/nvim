@@ -51,7 +51,6 @@ return {
 	},
 	{
 		"tailwindcss",
-		enable = true,
 		options = {
 			filetypes = { "css", "typescriptreact" },
 		},

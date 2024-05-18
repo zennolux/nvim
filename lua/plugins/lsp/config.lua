@@ -9,7 +9,6 @@ for _, item in pairs(servers) do
 	if item.enable ~= false then
 		local lsp = item[1]
 		require("lspconfig")[lsp].setup({
-			on_attach = on_attach,
 			capabilities = capabilities,
 			flags = {
 				debounce_text_changes = 150,
