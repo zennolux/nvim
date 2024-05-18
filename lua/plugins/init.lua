@@ -72,6 +72,10 @@ require("lazy").setup({
 		end,
 	},
 	{
+		"folke/neodev.nvim",
+		ft = { "lua" },
+	},
+	{
 		"neovim/nvim-lspconfig",
 		lazy = true,
 		event = "BufRead",

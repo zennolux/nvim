@@ -1,5 +1,11 @@
 return {
 	{
+		"lua_ls",
+		options = {
+			filetypes = { "lua" },
+		},
+	},
+	{
 		"rust_analyzer",
 		options = {
 			filetypes = { "rust" },
