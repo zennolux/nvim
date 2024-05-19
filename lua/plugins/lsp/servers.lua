@@ -3,6 +3,11 @@ return {
 		"lua_ls",
 		options = {
 			filetypes = { "lua" },
+			settings = {
+				Lua = {
+					hint = { enable = true },
+				},
+			},
 		},
 	},
 	{
