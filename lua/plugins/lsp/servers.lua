@@ -85,4 +85,10 @@ return {
 			filetypes = { "jsonc", "json" },
 		},
 	},
+	{
+		"markdown_oxide",
+		options = {
+			filetypes = { "markdown" },
+		},
+	},
 }
