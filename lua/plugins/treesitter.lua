@@ -13,6 +13,8 @@ require("nvim-treesitter.configs").setup({
 		"toml",
 		"yaml",
 	},
-	sync_install = true,
+	highlight = {
+		enable = true,
+	},
 	indent = true,
 })
