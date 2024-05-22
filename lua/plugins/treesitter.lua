@@ -6,7 +6,6 @@ require("nvim-treesitter.configs").setup({
 		"typescript",
 		"tsx",
 		"rust",
-		"lua",
 		"markdown",
 		"markdown_inline",
 		"json",
