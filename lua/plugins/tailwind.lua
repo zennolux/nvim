@@ -6,7 +6,7 @@ require("tailwind-tools").setup({
 		debounce = 200, -- in milliseconds, only applied in insert mode
 	},
 	conceal = {
-		enabled = true, -- can be toggled by commands
+		enabled = false, -- can be toggled by commands
 		min_length = nil, -- only conceal classes exceeding the provided length
 		symbol = "󱏿", -- only a single character is allowed
 		highlight = { -- extmark highlight options, see :h 'highlight'
