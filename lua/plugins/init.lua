@@ -31,7 +31,7 @@ require("lazy").setup({
 		lazy = true,
 		event = "insertEnter",
 		config = function()
-			require("nvim-ts-autotag").setup()
+			require("nvim-ts-autotag").setup({})
 		end,
 	},
 	{
@@ -152,7 +152,7 @@ require("lazy").setup({
 		lazy = true,
 		event = "BufRead",
 		config = function()
-			require("colorizer").setup()
+			require("colorizer").setup({})
 		end,
 	},
 	{
