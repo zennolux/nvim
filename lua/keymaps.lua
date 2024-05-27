@@ -23,6 +23,7 @@ map(
 	":lua require('telescope.builtin').find_files({search_dirs = {require('utils').get_project_root()}})<CR>",
 	options
 )
+map("n", "<Leader>ff", ":lua require('telescope.builtin').buffers({sort_mru = true, ignore_current_buffer = true})<CR>", options)
 map(
 	"n",
 	"<Leader>s",

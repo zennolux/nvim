@@ -4,7 +4,10 @@ require("telescope").setup({
 			theme = "dropdown",
 		},
 		live_grep = {
-			theme = "dropdown"
+			theme = "dropdown",
 		},
-	}
+		buffers = {
+			theme = "dropdown",
+		},
+	},
 })
