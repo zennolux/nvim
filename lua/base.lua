@@ -26,6 +26,7 @@ utils.define_options({
 	fileformats = "unix",
 	mouse = "",
 	cmdheight = 0,
+	conceallevel = 0,
 	spell = true,
 	spelllang = "en_us",
 })
