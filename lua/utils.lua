@@ -21,7 +21,7 @@ end
 function M.get_project_root()
 	local path = vim.fn.expand("%:p:h")
 	while path ~= "/" do
-		if vim.fn.glob(path .. "/.git") ~= "" or vim.fn.glob(path .. "/package.json") ~= "" then
+		if vim.fn.glob(path .. "/.git") ~= "" then
 			return path
 		end
 		path = vim.fn.fnamemodify(path, ":h")
