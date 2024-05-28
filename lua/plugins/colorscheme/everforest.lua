@@ -43,6 +43,12 @@ api.nvim_create_autocmd("ColorScheme", {
 			ctermfg = 214,
 			fg = 14400639,
 		})
+		--set function highlight
+		api.nvim_set_hl(0, "@function", {
+			bold = true,
+			ctermfg = 142,
+			fg = "#a7c080",
+		})
 	end,
 })
 
