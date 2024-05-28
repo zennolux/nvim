@@ -27,19 +27,19 @@ api.nvim_create_autocmd("ColorScheme", {
 		api.nvim_set_hl(0, "SpellLocal", spell_opts)
 		api.nvim_set_hl(0, "SpellRare", spell_opts)
 		--set diagnostic highlight
-		api.nvim_set_hl(0, "ErrorText", {
+		api.nvim_set_hl(0, "DiagnosticError", {
 			ctermfg = 167,
 			fg = 15105664,
 		})
-		api.nvim_set_hl(0, "InfoText", {
+		api.nvim_set_hl(0, "DiagnosticInfo", {
 			ctermfg = 109,
 			fg = 8371123,
 		})
-		api.nvim_set_hl(0, "HintText", {
+		api.nvim_set_hl(0, "DiagnosticHint", {
 			ctermfg = 142,
 			fg = 10993792,
 		})
-		api.nvim_set_hl(0, "WarningText", {
+		api.nvim_set_hl(0, "DiagnosticWarn", {
 			ctermfg = 214,
 			fg = 14400639,
 		})
