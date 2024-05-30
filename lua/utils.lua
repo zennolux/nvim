@@ -1,5 +1,9 @@
 local M = {}
 
+M.lazy = {
+	plugins = { list = {} },
+}
+
 function M.define_options(opts, global)
 	local set = vim.o
 	if global == true then
@@ -33,6 +37,21 @@ function M.toggle_tree_filter()
 	local tree = require("nvim-tree.api").tree
 	tree.toggle_hidden_filter()
 	tree.toggle_gitignore_filter()
+end
+
+function M.lazy:init()
+	local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+	vim.opt.rtp:prepend(lazypath)
+	return self
+end
+
+function M.lazy.plugins:append(plugin)
+	table.insert(self.list, plugin)
+	return self
+end
+
+function M.lazy.plugins:load()
+	require("lazy").setup(self.list)
 end
 
 return M

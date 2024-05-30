@@ -1,166 +1,40 @@
-local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-vim.opt.rtp:prepend(lazypath)
-
-require("lazy").setup({
-	{
-		"voldikss/vim-floaterm",
-		lazy = true,
-		event = "VimEnter",
-		config = function()
-			require("plugins.floaterm")
-		end,
-	},
-	{
-		"voldikss/vim-translator",
-		lazy = true,
-		cmd = "TranslateW",
-		config = function()
-			require("plugins.translator")
-		end,
-	},
-	{
-		"windwp/nvim-autopairs",
-		lazy = true,
-		event = "InsertEnter",
-		config = function()
-			require("nvim-autopairs").setup()
-		end,
-	},
-	{
-		"windwp/nvim-ts-autotag",
-		lazy = true,
-		event = "insertEnter",
-		config = function()
-			require("nvim-ts-autotag").setup({})
-		end,
-	},
-	{
-		"sainnhe/everforest",
-		lazy = false,
-		priority = 1000,
-		config = function()
-			require("plugins.colorscheme.everforest")
-		end,
-	},
-	{
-		"nvim-lualine/lualine.nvim",
-		lazy = true,
-		event = "BufRead",
-		dependencies = { "nvim-tree/nvim-web-devicons", lazy = true },
-		config = function()
-			require("plugins.lualine")
-		end,
-	},
-	{
-		"nvim-tree/nvim-tree.lua",
-		version = "*",
-		lazy = true,
-		cmd = "NvimTreeToggle",
-		dependencies = {
-			"nvim-tree/nvim-web-devicons",
-		},
-		config = function()
-			require("plugins.tree")
-		end,
-	},
-	{
-		"nvim-treesitter/nvim-treesitter",
-		lazy = true,
-		event = "BufEnter",
-		config = function()
-			require("plugins.treesitter")
-		end,
-	},
-	{
-		"folke/neodev.nvim",
-		ft = { "lua" },
-	},
-	{
-		"neovim/nvim-lspconfig",
-		lazy = true,
-		event = "BufRead",
-		dependencies = {
-			"hrsh7th/nvim-cmp",
-			"hrsh7th/cmp-nvim-lsp",
-			"hrsh7th/cmp-buffer",
-			"hrsh7th/cmp-path",
-			"f3fora/cmp-spell",
-			"L3MON4D3/LuaSnip",
-			"saadparwaiz1/cmp_luasnip",
-			"rafamadriz/friendly-snippets",
-			"onsails/lspkind.nvim",
-		},
-		config = function()
-			require("plugins.lsp.config")
-		end,
-	},
-	{
-		"nvimdev/guard.nvim",
-		lazy = true,
-		event = "BufRead",
-		config = function()
-			require("plugins.guard")
-		end,
-	},
-	{
-		"nvimdev/lspsaga.nvim",
-		lazy = true,
-		event = "LspAttach",
-		config = function()
-			require("plugins.lsp.saga")
-		end,
-		dependencies = {
-			"nvim-treesitter/nvim-treesitter",
-			"nvim-tree/nvim-web-devicons",
-		},
-	},
-	{
-		"iamcco/markdown-preview.nvim",
-		lazy = true,
-		ft = { "markdown" },
-		build = function()
-			vim.fn["mkdp#util#install"]()
-		end,
-	},
-	{
-		"nvim-telescope/telescope.nvim",
-		lazy = true,
-		tag = "0.1.6",
-		dependencies = { "nvim-lua/plenary.nvim" },
-		config = function()
-			require("plugins.telescope")
-		end,
-	},
-	{
-		"lewis6991/gitsigns.nvim",
-		lazy = true,
-		event = "BufRead",
-		config = function()
-			require("plugins.gitsigns")
-		end,
-	},
-	{
-		"echasnovski/mini.indentscope",
-		lazy = true,
-		event = "BufRead",
-		config = function()
-			require("mini.indentscope").setup()
-		end,
-	},
-	{
-		"NvChad/nvim-colorizer.lua",
-		lazy = true,
-		event = "BufRead",
-		config = function()
-			require("colorizer").setup({})
-		end,
-	},
-	{
-		"luckasRanarison/tailwind-tools.nvim",
-		lazy = true,
-		ft = { "typescriptreact", "css" },
-		config = function()
-			require("plugins.tailwind")
-		end,
-	},
-})
+--stylua: ignore
+require("utils").lazy:init().plugins
+:append(
+require('plugins.colorscheme')
+):append(
+require('plugins.floaterm')
+):append(
+require('plugins.gitsigns')
+):append(
+require('plugins.guard')
+):append(
+require('plugins.lualine')
+):append(
+require('plugins.tree')
+):append(
+require('plugins.telescope')
+):append(
+require('plugins.translator')
+):append(
+require('plugins.treesitter')
+):append(
+require('plugins.tailwind')
+):append(
+require('plugins.autotag')
+):append(
+require('plugins.autopairs')
+):append(
+require('plugins.colorizer')
+):append(
+require('plugins.indentscope')
+):append(
+require('plugins.neodev')
+):append(
+require('plugins.markdown')
+):append(
+require('plugins.lsp.config')
+):append(
+require('plugins.lsp.saga')
+)
+:load()
