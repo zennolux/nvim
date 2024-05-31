@@ -42,6 +42,9 @@ return {
 					ctermfg = 142,
 					fg = "#a7c080",
 				})
+				--set nvimtree folder icon
+				api.nvim_set_hl(0, "NvimTreeClosedFolderIcon", { link = "Blue" })
+				api.nvim_set_hl(0, "NvimTreeOpenedFolderIcon", { link = "Blue" })
 			end,
 		})
 
