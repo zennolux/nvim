@@ -11,7 +11,6 @@ return {
 			ui = {
 				border = "rounded",
 				code_action = "",
-				foldericon = false,
 			},
 			finder = {
 				default = "ref+imp+def",
