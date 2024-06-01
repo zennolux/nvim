@@ -17,6 +17,7 @@ return {
 		local api = vim.api
 		local float_opts = { bg = "NONE", ctermbg = "NONE" }
 		local spell_opts = { ctermbg = "NONE", bg = "NONE", sp = "NONE" }
+		local fn_opts = { bold = true, ctermfg = 142, fg = "#a7c080" }
 
 		api.nvim_create_autocmd("ColorScheme", {
 			pattern = "*",
@@ -37,11 +38,8 @@ return {
 				api.nvim_set_hl(0, "DiagnosticHint", { link = "HintFloat" })
 				api.nvim_set_hl(0, "DiagnosticWarn", { link = "WarningFloat" })
 				--set function highlight
-				api.nvim_set_hl(0, "@function", {
-					bold = true,
-					ctermfg = 142,
-					fg = "#a7c080",
-				})
+				api.nvim_set_hl(0, "@function", fn_opts)
+				api.nvim_set_hl(0, "@function.builtin", fn_opts)
 				--set nvimtree folder icon
 				api.nvim_set_hl(0, "NvimTreeClosedFolderIcon", { link = "Blue" })
 				api.nvim_set_hl(0, "NvimTreeOpenedFolderIcon", { link = "Blue" })
