@@ -49,12 +49,6 @@ return {
 		},
 	},
 	{
-		"intelephense",
-		options = {
-			filetypes = { "php" },
-		},
-	},
-	{
 		"tailwindcss",
 		options = {
 			filetypes = { "css", "typescriptreact" },
