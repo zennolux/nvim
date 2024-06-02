@@ -32,11 +32,6 @@ return {
 				api.nvim_set_hl(0, "SpellCap", spell_opts)
 				api.nvim_set_hl(0, "SpellLocal", spell_opts)
 				api.nvim_set_hl(0, "SpellRare", spell_opts)
-				--set diagnostic highlight
-				api.nvim_set_hl(0, "DiagnosticError", { link = "ErrorFloat" })
-				api.nvim_set_hl(0, "DiagnosticInfo", { link = "InfoFloat" })
-				api.nvim_set_hl(0, "DiagnosticHint", { link = "HintFloat" })
-				api.nvim_set_hl(0, "DiagnosticWarn", { link = "WarningFloat" })
 				--set function highlight
 				api.nvim_set_hl(0, "@function", fn_opts)
 				api.nvim_set_hl(0, "@function.builtin", fn_opts)
