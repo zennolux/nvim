@@ -31,7 +31,7 @@ utils.define_options({
 	spelllang = "en_us",
 })
 
-utils.define_sign({ name = "DiagnosticSignError", text = "" })
+utils.define_sign({ name = "DiagnosticSignError", text = "" })
 utils.define_sign({ name = "DiagnosticSignWarn", text = "" })
 utils.define_sign({ name = "DiagnosticSignHint", text = "" })
 utils.define_sign({ name = "DiagnosticSignInfo", text = "" })
