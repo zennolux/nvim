@@ -11,8 +11,6 @@ return {
 				"typescript",
 				"tsx",
 				"rust",
-				"markdown",
-				"markdown_inline",
 				"json",
 				"toml",
 				"yaml",
