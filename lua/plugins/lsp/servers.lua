@@ -85,4 +85,10 @@ return {
 			filetypes = { "markdown" },
 		},
 	},
+	{
+		"astro",
+		options = {
+			filetypes = { "astro" },
+		},
+	},
 }
