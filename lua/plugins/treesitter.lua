@@ -18,7 +18,9 @@ return {
 			highlight = {
 				enable = true,
 			},
-			indent = true,
+			indent = {
+				enable = true,
+			},
 		})
 	end,
 }
