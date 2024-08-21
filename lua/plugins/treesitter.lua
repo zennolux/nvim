@@ -14,6 +14,7 @@ return {
 				"json",
 				"toml",
 				"yaml",
+				"astro",
 			},
 			highlight = {
 				enable = true,
