@@ -17,7 +17,7 @@ return {
 		},
 	},
 	{
-		"tsserver",
+		"ts_ls",
 		options = {
 			filetypes = { "javascript", "typescript", "typescriptreact" },
 			init_options = {
