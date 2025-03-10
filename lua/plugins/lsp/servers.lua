@@ -91,4 +91,10 @@ return {
 			filetypes = { "astro" },
 		},
 	},
+	{
+		"intelephense",
+		options = {
+			filetypes = { "php" },
+		},
+	},
 }
