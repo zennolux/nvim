@@ -36,6 +36,7 @@ return {
 				api.nvim_set_hl(0, "@function", fn_opts)
 				api.nvim_set_hl(0, "@function.builtin", fn_opts)
 				api.nvim_set_hl(0, "@function.macro", fn_opts)
+				api.nvim_set_hl(0, "@function.method.php", fn_opts)
 				--set nvimtree folder icon
 				api.nvim_set_hl(0, "NvimTreeClosedFolderIcon", { link = "Blue" })
 				api.nvim_set_hl(0, "NvimTreeOpenedFolderIcon", { link = "Blue" })
