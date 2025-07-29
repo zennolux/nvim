@@ -4,7 +4,21 @@ return {
 	lazy = true,
 	cmd = "NvimTreeToggle",
 	dependencies = {
-		"nvim-tree/nvim-web-devicons",
+		{
+			"nvim-tree/nvim-web-devicons",
+			config = function()
+				require("nvim-web-devicons").setup({
+					override = {
+						css = {
+							icon = "",
+							color = "#408852",
+							cterm_color = "62",
+							name = "Css",
+						},
+					},
+				})
+			end,
+		},
 	},
 	config = function()
 		require("nvim-tree").setup({
