@@ -11,9 +11,20 @@ return {
 					override = {
 						css = {
 							icon = "",
-							color = "#408852",
 							cterm_color = "62",
 							name = "Css",
+						},
+					},
+					override_by_filename = {
+						["vite.config.ts"] = {
+							icon = "",
+							name = "vite.config.ts",
+						},
+						["pnpm-lock.yaml"] = {
+							yaml = {
+								icon = "",
+								name = "pnpm-lock.yaml",
+							},
 						},
 					},
 				})
