@@ -66,8 +66,11 @@ return {
 			filetypes = { "css" },
 			settings = {
 				css = {
+					validate = false,
 					lint = {
+						validProperties = {},
 						unknownAtRules = "ignore",
+						unknownProperties = "ignore",
 					},
 				},
 			},
